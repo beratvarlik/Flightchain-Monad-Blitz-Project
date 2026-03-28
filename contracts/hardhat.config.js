@@ -8,11 +8,18 @@ export default {
   solidity: "0.8.20",
   networks: {
     hardhat: {
-      chainId: 1337
+      type: "edr-simulated",
+      chainId: 31337
+    },
+    localhost: {
+      type: "http",
+      url: "http://127.0.0.1:8545",
+      chainId: 31337
     },
     monad_testnet: {
+      type: "http",
       url: process.env.MONAD_RPC_URL || "https://testnet-rpc.monad.xyz",
-      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : []
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : undefined
     }
   }
 };
