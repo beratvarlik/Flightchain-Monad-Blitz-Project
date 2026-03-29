@@ -38,4 +38,4 @@ I have architected this project using a modern, scalable stack to ensure both de
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/your-username/skypass-monad.git](https://github.com/your-username/skypass-monad.git)
+   git clone [https://github.com/beratvarlik/Flightchain-Monad-Blitz-Project.git]
